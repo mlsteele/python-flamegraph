@@ -64,7 +64,7 @@ class ProfileThread(threading.Thread):
           with self._lock:
             self._stats[entry] += 1
 
-        self._stopevent.wait(self._interval)  # basically a sleep for x seconds unless someone asked to stop
+        # self._stopevent.wait(self._interval)  # basically a sleep for x seconds unless someone asked to stop
 
     self._write_results()
 
